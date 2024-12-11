@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+
+            <button><img src="src/icons8-search-50.png" alt="" srcset=""></button>
+        </div>
+        <div class="weather">
+            <lottie-player src="src/rain.json" background="transparent" class="weather-icon" speed="1"  loop autoplay></lottie-player>
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">Mumbai</h2>
+            <h3 class="message">nothing here</h3>
+            <div class="details">
+                <div class="col">
+                    <lottie-player src="src/humi.json" class="humi" background="transparent" speed="1" loop autoplay></lottie-player>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <lottie-player src="src/wind.json" class="wind" background="transparent" speed="1" loop autoplay></lottie-player>
+                    <div> 
+                        <p class="win">15 km/h</p>
+                        <p>wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
